@@ -1,11 +1,11 @@
-# Qoder Rules - Spec Coding Design Patterns
+# Trae Rules - Spec Coding Design Patterns
 
 完整的代码规范和模板系统，用于提升 AI 辅助开发的代码质量和一致性、遵循云与AI卓越架构、遵循最佳实践和开发范式。
 
 ## 📦 目录结构
 
 ```
-qoder-rules/
+trae-rules/
 ├── core/                          # 核心规范（必需）
 │   ├── requirements-spec.md       # 开发需求规范（13条规则）
 │   ├── requirements-spec.zh-CN.md
@@ -44,25 +44,25 @@ qoder-rules/
 
 ```bash
 # 克隆整个仓库
-git clone https://github.com/your-repo/qoder-rules.git
-cd qoder-rules
+git clone https://github.com/yanyuxiyangzk/trae-rules.git
+cd trae-rules
 ```
 
-### 2. 在 Qoder IDE 中使用
+### 2. 在 Trae IDE 中使用
 
-将规范文件复制到项目的 `.qoder/rules` 目录：
+将规范文件复制到项目的 `.trae/rules` 目录：
 
 ```bash
 # 复制核心规范
-mkdir -p .qoder/rules
-cp core/*.md .qoder/rules/
-cp quality/*.md .qoder/rules/
-cp architecture/*.md .qoder/rules/
+mkdir -p .trae/rules
+cp core/*.md .trae/rules/
+cp quality/*.md .trae/rules/
+cp architecture/*.md .trae/rules/
 ```
 
 ### 3. 在 AI 对话中引用规范
 
-在 Qoder IDE 或其他 AI 辅助开发工具中：
+在 Trae IDE 或其他 AI 辅助开发工具中：
 
 ```
 @core/requirements-spec.zh-CN.md
@@ -180,9 +180,9 @@ node tools/spec-report.js --output compliance-report.json
 
 ## 🎨 IDE 集成
 
-### Qoder IDE
+### Trae IDE
 
-规范文件支持 `trigger: manual` frontmatter，可直接在 `.qoder/rules` 目录中使用：
+规范文件支持 `trigger: manual` frontmatter，可直接在 `.trae/rules` 目录中使用：
 
 ```yaml
 ---
@@ -319,9 +319,9 @@ jobs:
 
 ## 🌟 特色功能
 
-### 1. 支持 Qoder IDE Rules
+### 1. 支持 trae IDE Rules
 
-所有规范文件包含 frontmatter 元数据，可直接作为 Qoder IDE 的 Rules 使用：
+所有规范文件包含 frontmatter 元数据，可直接作为 trae IDE 的 Rules 使用：
 
 ```yaml
 ---
